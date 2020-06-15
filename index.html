@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/baseStyle.css">
-        <link rel="icon" type="image/png" href="/favicon-w.png">
+        <link rel="icon" type="image/png" href="/favicon.png">
         <link rel="stylesheet" href="https://use.typekit.net/alc6krz.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
         <title>A Letter From Your Friendly Neighbor</title>
         
         <!--script async src="/main.js"></script-->
@@ -13,7 +14,17 @@
   
     <body>
         <div class="col-1" style="overflow: hidden;">
+            <header>
+                <a class="language active" href="/Friendly-Letter/">English</a> &bull; 
+                <a class="language" href="/Friendly-Letter/index-es.html">Español</a> &bull; 
+                <a class="language" href="/Friendly-Letter/index-vn.html">Tiếng Việt</a> &bull; 
+                <a class="language" href="/Friendly-Letter/index-cn.html">中文(简体)</a> &bull; 
+                <a class="language" href="/Friendly-Letter/index-hk.html">中文(香港)</a> &bull; 
+                <a class="language" href="/Friendly-Letter/index-kr.html">한국어</a>  
+            </header>
+            <img class="hands mobile" alt="three raised fists with different skin tones" src="/Friendly-Letter/hands.svg">
             <h1>A Letter From Your Friendly&nbsp;Neighbor</h1>
+            <img class="hands desktop" alt="three raised fists with different skin tones" src="/Friendly-Letter/hands.svg">
             <p>
                 New York City is a true melting pot. Now is the time to come together as a community and fight for black people’s right to live. We are personally responsible for becoming more ethical than the society we grew up in, especially as the people who make up one of the most diverse cities in the world.
             </p>
@@ -94,17 +105,35 @@
             </div>
         </div>
         <h3><div class='col-1'>This is not just a black issue, or a political issue, but a humanitarian&nbsp;issue.</div></h3>
+        <div class="col-1" style="text-align: center;">
+            <a href="/Friendly-Letter/credits.html">Credits & Attribution</a><br><br>
+            Text is available under the <a href="https://max11d.github.io/Friendly-Letter/LICENSE.txt">Creative Commons Attribution Share Alike 4.0 International</a> License.
+            <br><br>
+        </div>
     </body>
   </html>
 
   <style>
+      header {
+          text-align: center;
+          margin-bottom: 0.5em;
+      }
+
+      .language {
+          text-decoration: none;
+          display: inline-block;
+          line-height: 2;
+      }
+
       body {
-          font-size: 30px;
-          font-family: mr-eaves-sans, sans-serif;
+          font-size: 27px;
+          line-height: 1.4;
+          font-family: 'Fira Sans', sans-serif, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑";
+          margin: 0;
       }
 
       h1, h2, h3{
-        font-family: blenny, Courier, monospace;
+        font-family: bungee, Courier, monospace;
         margin: 0.66em 0;
         line-height: 1.25em;
       }
@@ -135,6 +164,8 @@
           width: 100%;
           max-width: 1040px;
           margin: 0 auto;
+          padding: 0 0.8em;
+          box-sizing: border-box;
       }
 
       .col-2 {
@@ -165,11 +196,22 @@
 
       ul{padding-inline-start: 35px;}
 
+      .hands {
+      }
+
+      .hands.desktop {
+        width: 14em;
+        float: right;
+      }
+
+      .hands.mobile {
+          display:none;
+      }
     @media (max-width: 1040px) {
         h1 { font-size: 40px; }
         h2 { font-size: 24px; }
         h3 { font-size: 34px; }
-        body {font-size: 24px; }
+        body {font-size: 22px; }
         .col-1 {
             max-width: 800px;
         }
@@ -179,7 +221,7 @@
         h1 { font-size: 32px; }
         h2 { font-size: 22px; }
         h3 { font-size: 28px; }
-        body {font-size: 20px; }
+        body {font-size: 19px; }
         .col-1 {
             max-width: 640px;
         }
@@ -208,6 +250,15 @@
 
       h2 {
           text-align: left !important; 
+      }
+
+      .hands.desktop {
+          display:none;
+      }
+      .hands.mobile {
+          display:block;
+          width: 100%;
+          max-height: 300px;
       }
     }
   </style>
