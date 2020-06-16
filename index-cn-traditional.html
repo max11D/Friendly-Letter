@@ -33,7 +33,7 @@
                 <a class="language" href="/Friendly-Letter/index-kr">한국어</a>  
             </header>
             <img class="hands mobile" alt="three raised fists with different skin tones" src="/Friendly-Letter/hands.svg">
-            <h1>一封來自你鄰居友好的信</h1>
+            <h1>一封來自你鄰<span style="display: inline-block">居友好的信</span></h1>
             <img class="hands desktop" alt="three raised fists with different skin tones" src="/Friendly-Letter/hands.svg">
             <p>
                 紐約市確實是一個大熔爐。也正因為如此，我們作為這個社區的一份子此刻更應該為黑人的生存權利而抗爭。身為這個世界上其中一個最多樣城市的市民，我們尤其有自身責任令這個伴隨我們成長和生活的社會比從前的更為人道。
@@ -124,151 +124,157 @@
   </html>
 
   <style>
-      header {
-          text-align: center;
-          margin-bottom: 0.5em;
-      }
+    header {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
 
-      .language {
-          text-decoration: none;
-          display: inline-block;
-          line-height: 2;
-      }
+    .language {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 2;
+    }
 
-      body {
-          font-size: 27px;
-          line-height: 1.4;
-          font-family: 'Fira Sans', sans-serif, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑";
-          margin: 0;
-      }
-
-      h1, h2, h3{
+    body {
+        font-size: 27px;
+        line-height: 1.4;
         font-family: 'Fira Sans', sans-serif, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑";
-        margin: 0.66em 0;
+        margin: 0;
+    }
+
+    h1, h2, h3{
+      font-family: 'Fira Sans', sans-serif, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑";
+      margin: 0.66em 0;
+      line-height: 1.25em;
+    }
+
+    li+li {
+      margin-top: 1em;
+    }
+
+    h1 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+
+    h3 {
+        background-color: black;
+        color:white;
+        text-align: center;
+        padding: 0.5em 0;
         line-height: 1.25em;
-      }
+        font-size:55px;
+    }
 
-      li+li {
-        margin-top: 1em;
-      }
+    .col-1{
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 0.8em;
+        box-sizing: border-box;
+    }
 
-      h1 {
-          font-size: 43px;
-          text-align: center;
-      }
+    .col-2 {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 0.5em;
+        box-sizing: border-box;
+    }
 
-      h2 {
-          font-size: 34px;
-      }
+    .col-2+.col-2{
+        padding-left: 0.5em;
+        padding-right: 0;
+    }
 
-      h3 {
-          background-color: black;
-          color:white;
-          text-align: center;
-          padding: 0.5em 0;
-          line-height: 1.25em;
-          font-size:55px;
-      }
+    .col-3 {
+        width:31%;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+        border-right: 3%;
+    }
 
-      .col-1{
-          width: 100%;
-          max-width: 1040px;
-          margin: 0 auto;
-          padding: 0 0.8em;
-          box-sizing: border-box;
-      }
+    .col-3+.col-3{
+        border-right: 0;
+        border-left: 3%;
+    }
 
+    ul{padding-inline-start: 35px;}
+
+    .hands {
+    }
+
+    .hands.desktop {
+      width: 14em;
+      float: right;
+    }
+
+    .hands.mobile {
+        display:none;
+    }
+  @media (max-width: 1040px) {
+      h1 { font-size: 64px; }
+      h3 { font-size: 44px; }
+      body {font-size: 22px; }
+      .col-1 {
+          max-width: 800px;
+      }
+  }
+
+  @media (max-width: 800px) {
+      h1 { font-size: 55px; }
+      h2 { font-size: 30px; }
+      h3 { font-size: 35px; }
+      body {font-size: 19px; }
+      .col-1 {
+          max-width: 640px;
+      }
+  }
+
+  @media (max-width: 650px) {
+      h1 { font-size: 55px; }
       .col-2 {
-          width: 50%;
-          display: inline-block;
-          vertical-align: top;
-          padding-right: 0.5em;
-          box-sizing: border-box;
-      }
-
-      .col-2+.col-2{
-          padding-left: 0.5em;
-          padding-right: 0;
-      }
-
-      .col-3 {
-          width:31%;
-          display: inline-block;
-          vertical-align: top;
-          box-sizing: border-box;
-          border-right: 3%;
-      }
-
-      .col-3+.col-3{
-          border-right: 0;
-          border-left: 3%;
-      }
-
-      ul{padding-inline-start: 35px;}
-
-      .hands {
-      }
-
-      .hands.desktop {
-        width: 14em;
-        float: right;
-      }
-
-      .hands.mobile {
-          display:none;
-      }
-    @media (max-width: 1040px) {
-        h1 { font-size: 33px; }
-        h2 { font-size: 24px; }
-        h3 { font-size: 44px; }
-        body {font-size: 22px; }
-        .col-1 {
-            max-width: 800px;
-        }
+        width: 100%;
+        padding-right: 0.0em;
     }
 
-    @media (max-width: 800px) {
-        h1 { font-size: 32px; }
-        h2 { font-size: 22px; }
-        h3 { font-size: 35px; }
-        body {font-size: 19px; }
-        .col-1 {
-            max-width: 640px;
-        }
+    .col-2+.col-2{
+        padding-left: 0.0em;
+        padding-right: 0;
     }
 
-    @media (max-width: 650px) {
-        .col-2 {
-          width: 100%;
-          padding-right: 0.0em;
-      }
-
-      .col-2+.col-2{
-          padding-left: 0.0em;
-          padding-right: 0;
-      }
-
-      .col-3 {
-          width:100%;
-          border-right: 0%;
-      }
-
-      .col-3+.col-3{
-          border-right: 0;
-          border-left: 0%;
-      }
-
-      h2 {
-          text-align: left !important; 
-      }
-
-      .hands.desktop {
-          display:none;
-      }
-      .hands.mobile {
-          display:block;
-          width: 100%;
-          max-height: 300px;
-      }
+    .col-3 {
+        width:100%;
+        border-right: 0%;
     }
-  </style>
+
+    .col-3+.col-3{
+        border-right: 0;
+        border-left: 0%;
+    }
+
+    h2 {
+        text-align: left !important; 
+    }
+
+    .hands.desktop {
+        display:none;
+    }
+    .hands.mobile {
+        display:block;
+        width: 100%;
+        max-height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+      h1 {
+          font-size: 50px;
+      }
+  }
+</style>

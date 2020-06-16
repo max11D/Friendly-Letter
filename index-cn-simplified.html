@@ -33,7 +33,7 @@
                 <a class="language" href="/Friendly-Letter/index-kr">한국어</a>  
             </header>
             <img class="hands mobile" alt="three raised fists with different skin tones" src="/Friendly-Letter/hands.svg">
-            <h1>一封來自你鄰居友好的信</h1>
+            <h1>一封來自你鄰<span style="display: inline-block">居友好的信</span></h1>
             <img class="hands desktop" alt="three raised fists with different skin tones" src="/Friendly-Letter/hands.svg">
             <p>
                 纽约市确实是一个大熔炉。也正因为如此，我们作为这个社区的一份子此刻更应该为黑人的生存权利而抗争。身为这个世界上其中一个最多样城市的市民，我们尤其有自身责任令这个伴随我们成长和生活的社会比从前的更为人道。
@@ -153,7 +153,7 @@
       }
 
       h1 {
-          font-size: 43px;
+          font-size: 80px;
           text-align: center;
       }
 
@@ -218,8 +218,7 @@
           display:none;
       }
     @media (max-width: 1040px) {
-        h1 { font-size: 33px; }
-        h2 { font-size: 24px; }
+        h1 { font-size: 64px; }
         h3 { font-size: 44px; }
         body {font-size: 22px; }
         .col-1 {
@@ -228,8 +227,8 @@
     }
 
     @media (max-width: 800px) {
-        h1 { font-size: 32px; }
-        h2 { font-size: 22px; }
+        h1 { font-size: 55px; }
+        h2 { font-size: 30px; }
         h3 { font-size: 35px; }
         body {font-size: 19px; }
         .col-1 {
@@ -238,6 +237,7 @@
     }
 
     @media (max-width: 650px) {
+        h1 { font-size: 55px; }
         .col-2 {
           width: 100%;
           padding-right: 0.0em;
@@ -270,5 +270,11 @@
           width: 100%;
           max-height: 300px;
       }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 50px;
+        }
     }
   </style>
